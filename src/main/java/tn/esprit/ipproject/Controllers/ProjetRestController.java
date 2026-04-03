@@ -53,5 +53,10 @@ public class ProjetRestController {
         return projetServiceImplementation.addEquipeToProject(idProject, idEquipe);
     }
 
+    @PostMapping("/addProjetWithDetails/{idPD}")
+    public Project ajouterProjetWithDetails(@RequestBody Project project, @PathVariable("idPD") long idProjetDetail){
+        return projetServiceImplementation.ajouterProjetWithDetails(project, idProjetDetail);
+    }
+
 
 }

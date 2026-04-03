@@ -13,6 +13,7 @@ public interface IProjectService {
     void supprimerProjet(long id);
     Project setProjectDetailsId(long idProject, long idProjetDetail);
     Project addEquipeToProject(long idProject, long idEquipe);
+    Project ajouterProjetWithDetails(Project project, long idProjetDetail);
 
 
 }
