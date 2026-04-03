@@ -14,6 +14,7 @@ public interface IProjectService {
     Project setProjectDetailsId(long idProject, long idProjetDetail);
     Project addEquipeToProject(long idProject, long idEquipe);
     Project ajouterProjetWithDetails(Project project, long idProjetDetail);
+    Project desaffecterProjetDetails(long idProject);
 
 
 }

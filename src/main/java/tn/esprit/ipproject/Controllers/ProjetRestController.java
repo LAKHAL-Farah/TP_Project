@@ -58,5 +58,10 @@ public class ProjetRestController {
         return projetServiceImplementation.ajouterProjetWithDetails(project, idProjetDetail);
     }
 
+    @PutMapping("/desaffecterProjetDetails/{idP}")
+    public Project desaffecterProjetDetails(@PathVariable("idP") long idProject){
+        return projetServiceImplementation.desaffecterProjetDetails(idProject);
+    }
+
 
 }

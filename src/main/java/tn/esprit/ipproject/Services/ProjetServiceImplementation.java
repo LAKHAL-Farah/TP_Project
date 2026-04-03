@@ -102,5 +102,15 @@ public class ProjetServiceImplementation implements IProjectService{
         return null;
     }
 
+    @Override
+    public Project desaffecterProjetDetails(long idProject) {
+        Project project = projetRepository.findById(idProject).orElse(null);
+        if (project != null) {
+            project.setProjetDetail(null);
+            return projetRepository.save(project);
+        }
+        return null;
+    }
+
 
 }
